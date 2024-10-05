@@ -1,0 +1,49 @@
+/* Import poppins font, dont touch  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+    background-image: url('../images/bg_compressed.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.navbar {    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;        
+    background-color: "transparent";
+    padding: 15px 120px;
+    z-index: 1000;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.navbar div {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #333;
+}
