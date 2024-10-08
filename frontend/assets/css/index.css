@@ -36,6 +36,8 @@ h1 {
   width: 100px;
   height: 100px;
   margin-top: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .navbar div {
@@ -109,3 +111,106 @@ h1 {
   font-weight: bold;
   text-align: center;
 }
+
+#container_menu {
+  display: none;
+}
+
+.visuallyHidden {
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; width: 1px; 
+  margin: -1px; padding: 0; border: 0; 
+}
+
+
+/* HAMBURGER  */
+.hamburger {
+  margin: 0 auto;  
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.hamburger .bar {
+  padding: 0;
+  width: 30px;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+  display: block;
+  border-radius: 4px;
+  transition: all 0.4s ease-in-out;
+  position: absolute; 
+}
+
+.bar1 {
+  top: 0;
+}
+
+.bar2,
+.bar3 {
+  top: 13.5px;
+}
+
+.bar3 {
+  right: 0;
+}
+
+.bar4 {
+  bottom: 0;
+}
+
+
+.checkbox:checked + label > .hamburger1 > .bar1{
+  transform: rotate(45deg);
+  transform-origin: 5%;
+  width: 41px
+}
+
+.checkbox:checked + label > .hamburger1 > .bar2 {
+  transform: translateX(-40px);
+  background-color: transparent;
+}
+
+.checkbox:checked + label > .hamburger1 > .bar3 {
+  transform: translateX(40px);
+  background-color: transparent;
+}
+
+.checkbox:checked + label > .hamburger1 > .bar4 {
+  transform-origin: 5%;
+  transform: rotate(-45deg);
+  width: 41px;
+}
+
+/* Media querys */
+
+@media (max-width: 800px) {
+  #container_items {
+    display: none;
+  }
+  .navbar {
+    padding: 15px 20px;
+    display: flex;
+  }
+  #container_menu {
+    display: flex;
+    align-items: center;
+    margin-right: 14px;
+  } 
+
+  #container_menu:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.5s;
+  } 
+
+  .logo img {
+    width: 100px;
+    height: 70px;    
+  }
+  
+}
+
+
