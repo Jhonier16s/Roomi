@@ -1,5 +1,10 @@
 console.log("Hello from main.js");
 
+/* let menu = document
+  .getElementById("checkbox")
+  .addEventListener("click", function () {
+    console.log("Clicked");
+  });
 
-
-let menu = document.getElementById("menu");
+console.log(menu);
+ */
