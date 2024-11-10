@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo json_encode(['success' => false, 'message' => 'Todos los campos son obligatorios.']);
     }
 } else {
-    echo json_encode(['success' => false, 'message' => 'Método no permitido.']);
+    echo json_encode(['success' => false, 'message' => 'Metodo no permitido.']);
 }
 
 ?>

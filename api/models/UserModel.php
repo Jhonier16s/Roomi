@@ -34,5 +34,13 @@ class UserModel {
 
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
+
+    public function listUsers() {
+        $sql = "SELECT nombre, apellido, correo_electronico FROM usuario";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }
 ?>

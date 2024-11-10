@@ -12,8 +12,8 @@ class SigninController {
         $user = $this->userModel->findUserByEmail($email);
 
         if ($user) {
-            if (password_verify($password, $user['contraseña'])) {
-                return ['success' => true, 'message' => 'Inicio de sesión exitoso.'];
+            if (password_verify($password, $user['contraseña'])) {                
+                return ['success' => true, 'message' => 'Inicio de sesion exitoso.'];
             } else {
                 return ['success' => false, 'message' => 'Contraseña incorrecta.'];
             }
