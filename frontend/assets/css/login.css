@@ -16,18 +16,18 @@ body {
 
 .container {
     display: flex;
-    width: 800px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .left-panel, .right-panel {
-    padding: 30px;
+    padding: 50px;
 }
 
 .left-panel {
     background-color: #fff;
-    width: 50%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,7 +106,7 @@ form .google-signin img {
 }
 
 .right-panel {
-    width: 50%;
+    width: 65%;
     background-color: #152a38;
     color: #fff;
     display: flex;
@@ -117,5 +117,5 @@ form .google-signin img {
 
 .right-panel p {
     font-size: 12px;
-    width: 80%;
+    width: 50%;
 }
